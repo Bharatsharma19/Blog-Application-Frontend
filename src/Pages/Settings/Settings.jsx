@@ -1,5 +1,5 @@
 import "./settings.css";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 
 export default function Settings() {
     return (

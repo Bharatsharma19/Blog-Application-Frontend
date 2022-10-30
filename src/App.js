@@ -14,12 +14,8 @@ function App() {
     <BrowserRouter>
       <Topbar />
       <Routes>
-        <Route exact path="/">
-          <Homepage />
-        </Route>
-        <Route path="/posts">
-          <Homepage />
-        </Route>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/posts" element={<Homepage />} />
         <Route path="/register">
           {currentUser ? <Homepage /> : <Register />}
         </Route>

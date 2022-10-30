@@ -1,5 +1,5 @@
-import Sidebar from "../../components/sidebar/Sidebar";
-import SinglePost from "../../components/singlePost/SinglePost";
+import Sidebar from "../../Components/Sidebar/Sidebar";
+import SinglePost from "../../Components/SinglePost/SinglePost";
 import "./single.css";
 
 export default function Single() {
