@@ -1,7 +1,7 @@
-import { useLocation } from "react-router";
-import Header from "../../components/header/Header";
-import Posts from "../../components/posts/Posts";
-import Sidebar from "../../components/sidebar/Sidebar";
+import { useLocation } from 'react-router-dom';
+import Header from "../../Components/Header/Header";
+import Posts from "../../Components/Posts/Posts";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 import "./homepage.css";
 
 export default function Homepage() {
