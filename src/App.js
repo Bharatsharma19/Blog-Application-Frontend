@@ -10,21 +10,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const currentUser = true;
+
   return (
     <BrowserRouter>
       <Topbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/posts" element={<Homepage />} />
-        <Route path="/register">
-          {currentUser ? <Homepage /> : <Register />}
-        </Route>
-        <Route path="/login">{currentUser ? <Homepage /> : <Login />}</Route>
-        <Route path="/post/:id">
-          <Single />
-        </Route>
-        <Route path="/write">{currentUser ? <Write /> : <Login />}</Route>
-        <Route path="/settings">{currentUser ? <Settings /> : <Login />}</Route>
+        <Route
+          path="/register"
+          element={currentUser ? <Homepage /> : <Register />}
+        />
+        <Route path="/login" element={currentUser ? <Homepage /> : <Login />} />
+        <Route path="/post/:id" element={<Single />} />
+        <Route path="/write" element={currentUser ? <Write /> : <Login />} />
+        <Route
+          path="/settings"
+          element={currentUser ? <Settings /> : <Login />}
+        />
       </Routes>
     </BrowserRouter>
   );
