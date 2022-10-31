@@ -31,15 +31,17 @@ export default function Login() {
         <input
           type="text"
           className="loginInput"
-          placeholder="Enter your username..."
+          placeholder="Enter your Username..."
           ref={userRef}
+          autoComplete=""
         />
         <label>Password</label>
         <input
           type="password"
           className="loginInput"
-          placeholder="Enter your password..."
+          placeholder="Enter your Password..."
           ref={passwordRef}
+          autoComplete=""
         />
         <button className="loginButton" type="submit" disabled={isFetching}>
           Login

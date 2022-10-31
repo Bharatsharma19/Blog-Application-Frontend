@@ -31,22 +31,25 @@ export default function Register() {
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your username..."
+          placeholder="Enter your Username"
           onChange={(e) => setUsername(e.target.value)}
+          autoComplete=""
         />
         <label>Email</label>
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your email..."
+          placeholder="Enter your Email"
           onChange={(e) => setEmail(e.target.value)}
+          autoComplete=""
         />
         <label>Password</label>
         <input
           type="password"
           className="registerInput"
-          placeholder="Enter your password..."
+          placeholder="Enter your Password"
           onChange={(e) => setPassword(e.target.value)}
+          autoComplete=""
         />
         <button className="registerButton" type="submit">
           Register
@@ -57,7 +60,7 @@ export default function Register() {
           Login
         </Link>
       </button>
-      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
+      {error && <span style={{ color: "red", marginTop: "10px" }}>Something went wrong!</span>}
     </div>
   );
 }

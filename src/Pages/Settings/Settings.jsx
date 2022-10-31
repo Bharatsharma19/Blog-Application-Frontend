@@ -12,7 +12,7 @@ export default function Settings() {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PF = "http://localhost:5000/images/"
+  const PF = "http://localhost:3001/images/"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -31,7 +31,7 @@ export default function Settings() {
       updatedUser.profilePic = filename;
       try {
         await axios.post("/upload", data);
-      } catch (err) {}
+      } catch (err) { }
     }
     try {
       const res = await axios.put("/users/" + user._id, updatedUser);
@@ -52,7 +52,7 @@ export default function Settings() {
           <label>Profile Picture</label>
           <div className="settingsPP">
             <img
-              src={file ? URL.createObjectURL(file) : PF+user.profilePic}
+              src={file ? URL.createObjectURL(file) : PF + user.profilePic}
               alt=""
             />
             <label htmlFor="fileInput">
