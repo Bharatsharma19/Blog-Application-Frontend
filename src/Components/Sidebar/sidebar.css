@@ -29,12 +29,13 @@
   text-align: center;
 }
 
-.sidebarItem > img {
+.sidebarItem>img {
   margin-top: 15px;
 }
 
-.sidebarItem > p {
+.sidebarItem>h2 {
   padding: 30px;
+  padding-right: 36px;
 }
 
 .sidebarList {
@@ -57,8 +58,8 @@
   justify-content: center;
 }
 
-.sidebarIcon{
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
+.sidebarIcon {
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
 }

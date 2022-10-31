@@ -22,22 +22,30 @@ export default function TopBar() {
         <ul className="topList">
           <li className="topListItem">
             <Link className="link" to="/">
-              HOME
+              <b>
+                HOME
+              </b>
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
-              ABOUT
-            </Link>
+            <a href="https://github.com/bharatsharma19" target="_blank" style={{ textDecoration: "none", color: "black" }}>
+              <b>
+                ABOUT
+              </b>
+            </a>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
-              CONTACT
-            </Link>
+            <a href="https://github.com/bharatsharma19" target="_blank" style={{ textDecoration: "none", color: "black" }}>
+              <b>
+                CONTACT
+              </b>
+            </a>
           </li>
           <li className="topListItem">
             <Link className="link" to="/write">
-              WRITE
+              <b>
+                WRITE
+              </b>
             </Link>
           </li>
           <li className="topListItem" onClick={handleLogout}>
@@ -54,12 +62,16 @@ export default function TopBar() {
           <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
-                LOGIN
+                <b><i>
+                  LOGIN
+                </i></b>
               </Link>
             </li>
             <li className="topListItem">
               <Link className="link" to="/register">
-                REGISTER
+                <b><i>
+                  REGISTER
+                </i></b>
               </Link>
             </li>
           </ul>

@@ -36,7 +36,7 @@
   margin: 10px 0;
 }
 
-.settingsPP > img {
+.settingsPP>img {
   width: 70px;
   height: 70px;
   border-radius: 20px;
@@ -56,12 +56,12 @@
   cursor: pointer;
 }
 
-.settingsForm > label {
+.settingsForm>label {
   font-size: 20px;
   margin-top: 20px;
 }
 
-.settingsForm > input {
+.settingsForm>input {
   color: gray;
   margin: 10px 0;
   height: 30px;
@@ -69,14 +69,14 @@
   border-bottom: 1px solid lightgray;
 }
 
-.settingsSubmit{
-    width: 150px;
-    align-self: center;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
+.settingsSubmit {
+  width: 150px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }

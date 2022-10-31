@@ -18,13 +18,14 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://i.pinimg.com/236x/1e/3f/58/1e3f587572a7a7b20bbf1828595a1786--holiday-party-themes-holiday-gift-guide.jpg"
-          alt=""
+          src="https://bharatsharma19.github.io/Main-Portfolio/assets/me.png"
+          alt="Bharat Sharma" style={{ width: "236px", height: "236px" }}
         />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
-        </p>
+        <h2>
+          <b>
+            "I'm a passionate Software Developer from India"
+          </b>
+        </h2>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
@@ -37,7 +38,7 @@ export default function Sidebar() {
         </ul>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
+        <span className="sidebarTitle">FOLLOW ME</span>
         <div className="sidebarSocial">
           <i className="sidebarIcon fab fa-facebook-square"></i>
           <i className="sidebarIcon fab fa-twitter-square"></i>
